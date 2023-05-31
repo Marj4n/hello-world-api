@@ -1,3 +1,6 @@
+import { Request, Response } from "express"
+import { get } from "lodash"
+
 import {
   createLanguage,
   getLanguageById,
@@ -5,10 +8,8 @@ import {
   getLanguages,
   getLanguagesWithLimit,
   updateLanguageById,
-} from "@/db/languages"
-import { Language } from "@/types/language"
-import { Request, Response } from "express"
-import { get } from "lodash"
+} from "../db/languages"
+import { Language } from "../types/language"
 
 export const index = async (req: Request, res: Response) => {
   try {

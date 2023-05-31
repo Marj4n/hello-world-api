@@ -1,6 +1,7 @@
-import { create, destroy, index, show, update } from "@/controllers/language"
-import { isAuthenticated } from "@/middlewares"
 import { Router } from "express"
+
+import { create, destroy, index, show, update } from "../controllers/language"
+import { isAuthenticated } from "../middlewares"
 
 export default (router: Router) => {
   // router.get("/v1", indexWithLimit) // http://localhost:8080/api/v1?limit=2

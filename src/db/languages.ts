@@ -1,5 +1,6 @@
-import { Language } from "@/types/language"
 import { Model, Schema, model } from "mongoose"
+
+import { Language } from "../types/language"
 
 const languageSchema: Schema<Language> = new Schema<Language>({
   _id: { type: String, required: true },
